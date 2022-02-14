@@ -30,7 +30,7 @@ export default function Appointment(props) {
     useEffect(() => {
 
         if (props.interview && mode === EMPTY) {
-            transition(SHOW);
+            transition(FORM);
         }
 
         if (!props.interview && mode === SHOW) {
@@ -50,7 +50,7 @@ export default function Appointment(props) {
             };
 
             props.bookInterview(props.id, interview)
-                .then(() => transition(SHOW))
+                .then(() => transition(FORM))
                 .catch(() => transition(ERROR_SAVE, true))
         }
     }
