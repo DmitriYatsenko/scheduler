@@ -5,7 +5,6 @@ import { useState } from 'react';
 
 const useVisualMode = (initial) => {
     const [mode, setMode] = useState(initial);
-    // eslint-disable-next-line
     const [history, setHistory] = useState([initial]);
 
     // allows to transition to a new mode

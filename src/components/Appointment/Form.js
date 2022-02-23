@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Button from 'components/Button';
 import InterviewerList from 'components/InterviewerList';
-// eslint-disable-next-line
 import { action } from '@storybook/addon-actions/dist/preview';
 
 export default function Form(props) {
@@ -18,7 +17,6 @@ export default function Form(props) {
     }
 
     function cancel() {
-        // props.onCancel;
         reset();
         props.onCancel()
     }
@@ -43,11 +41,7 @@ export default function Form(props) {
                         onChange={(event) => setName(event.target.value)}
                         value={currentName}
                         placeholder="Enter Student Name"
-                        // placeholder={currentName ? currentName : "Enter Student Name"}
                         data-testid="student-name-input"
-                    /*
-                      This must be a controlled component
-                    */
                     />
                     <section className="appointment__validation">{error}</section>
                 </form>
