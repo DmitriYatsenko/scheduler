@@ -15,6 +15,7 @@ export default function Appointment(props) {
 
     const EMPTY = "EMPTY";
     const SHOW = "SHOW";
+    const FORM = "FORM";
     const CREATE = "CREATE";
     const SAVING = "SAVING";
     const DELETING = "DELETING";
