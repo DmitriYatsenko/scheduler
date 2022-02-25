@@ -23,4 +23,4 @@ npm run storybook
 ```
 ## Screenshot
 
-[]
+[https://github.com/DmitriYatsenko/scheduler/blob/master/docs/Appointment%20add%20%26%20delete.JPG]
