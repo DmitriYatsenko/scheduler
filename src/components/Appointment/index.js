@@ -72,6 +72,10 @@ export default function Appointment(props) {
         transition(EDIT);
     }
 
+    function editSave() {
+        transition(FORM);
+    }
+
     return (
 
         <article className="appointment" data-testid="appointment">
@@ -113,7 +117,7 @@ export default function Appointment(props) {
             {mode === ERROR_SAVE &&
                 <Error
                     message="Could not create appointment"
-                    onClose={edit}
+                    onClose={editSave}
                 />
             }
             {mode === ERROR_DELETE &&
