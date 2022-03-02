@@ -69,11 +69,15 @@ export default function Appointment(props) {
     }
 
     function edit() {
-        transition(SHOW);
+        transition(EDIT);
     }
 
     function editSave() {
         transition(CREATE, true);
+    }
+
+    function editDelete() {
+        transition(SHOW);
     }
 
     return (
@@ -123,7 +127,7 @@ export default function Appointment(props) {
             {mode === ERROR_DELETE &&
                 <Error
                     message="Could not cancel appointment"
-                    onClose={edit}
+                    onClose={editDelete}
                 />
             }
         </article>
