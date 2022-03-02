@@ -73,7 +73,7 @@ export default function Appointment(props) {
     }
 
     function editSave() {
-        transition(FORM);
+        transition(CREATE);
     }
 
     return (
