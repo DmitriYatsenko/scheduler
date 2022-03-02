@@ -69,11 +69,11 @@ export default function Appointment(props) {
     }
 
     function edit() {
-        transition(EDIT);
+        transition(SHOW);
     }
 
     function editSave() {
-        transition(CREATE);
+        transition(CREATE, true);
     }
 
     return (
